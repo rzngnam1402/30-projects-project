@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #fff;
+}
+
+.main {
+    width: 1200px;
+    min-height: 100vh;
+    max-width: 100%;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    height: 48px;
+    background-color: #333;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 48px;
+}
+
+/* Article */
+h1 {
+    line-height: 2rem;
+}
+
+article {
+    padding: 0 16px;
+    line-height: 1.6rem;
+}
+
+article img {
+    width: 640px;
+    max-width: 100%;
+    display: block;
+    margin: 32px auto;
+}
+
+/* Mobile nav */
+
+.nav__bar-btn {
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    margin-top: -4px;
+    display: none;
+}
+
+.nav__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    animation: fadeIn linear 0.2s;
+}
+
+.nav__mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 320px;
+    max-width: 100%;
+    background-color: #fff;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform linear 0.2s, opacity linear 0.2s;
+}
+
+.nav__mobile-list {
+    margin-top: 24px;
+    list-style: none;
+}
+
+.nav__mobile-link {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px 0;
+    font-size: 1.4rem;
+    margin-top: 12px;
+}
+
+.nav__mobile-close:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.nav__mobile-close {
+    width: 14px;
+    height: 14px;
+    color: #666;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    padding: 8px 0px;
+    margin-right: 8px;
+}
+
+.nav__checkbox {
+    display: none;
+}
+
+.nav__checkbox:checked ~ .nav__overlay {
+    display: block;
+}
+
+.nav__checkbox:checked ~ .nav__mobile {
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+@media screen and (max-width: 1023px) {
+    .nav__bar-btn {
+        display: block;
+        margin-left: 16px;
+    }
+
+    .nav__pc {
+        display: none;
+    }
+}
+
+@keyframes fadeIN {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

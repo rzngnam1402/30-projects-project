@@ -1,0 +1,24 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "name": "Kiến thức cơ bản",
+      "description": "Kiến thức cơ bản cho người mới bắt đầu"
+    },
+    {
+      "name": "Xây dựng web với NodeJS và ExpressJS",
+      "description": "Xây dựng web trong thực tế với cách giảng dễ hiểu, chỉnh chu, tận tâm với NodeJS và ExpressJS",
+      "id": 2
+    },
+    {
+      "name": "Thiết kế web responsive",
+      "description": "Responsive Web Design (Thiết kế website tương thích di động) là cách thức bạn xây dựng một website đáp ứng trên mỗi thiết bị và kích thước khung hình khác nhau, không cần biết là khung lớn, nhỏ hay máy tính (desktop).",
+      "id": 3
+    },
+    {
+      "name": "HTML, CSS tips",
+      "description": "Khoá học về HTML, CSS tips thông dụng trong thực tế",
+      "id": 6
+    }
+  ]
+}

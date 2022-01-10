@@ -1,0 +1,21 @@
+:root
+{
+    /* Global varibles */
+    --text-color : violet; 
+}  
+h1 {
+    --my-color: green;
+    color: var(--text-color);
+}
+
+h2  {
+    color: aqua;
+}
+
+.paragraph.p2 {
+    color: burlywood;
+}
+
+.container div div {
+    color:cornflowerblue;
+}

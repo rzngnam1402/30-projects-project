@@ -1,0 +1,138 @@
+/* Tablet & Mobile  */
+@media (max-width: 63.9375em)
+{
+    .btn {
+        padding: 15px 16px;
+    }
+
+    #nav .subnav a {
+        padding: 5px 12px;
+    }
+
+    .contact-form .form-control {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    .contact-info {
+        line-height: 2;
+    }
+
+    .social-list {
+        font-size: 48px;
+    }
+
+    .social-list a {
+        margin: 0 8px;
+    }
+    
+    #footer .copyright a {
+        padding: 12px 0;
+        display: inline-block;
+    }
+
+    .contact-submit-btn {
+        font-size: 16px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 46.1975em) {
+    .s-full-width,
+    .s-col-full {
+        width: 100%;
+    }
+
+    .s-mt-8 {
+        margin-top: 8px !important;
+    }
+
+    .s-mt-16 {
+        margin-top: 16px !important;
+    }
+
+    #slider .text-content {
+        bottom: 13px;
+    }
+
+    #slider .text-heading {
+        font-size: 16px;
+    }
+
+    #slider .text-description {
+        font-size: 12px;
+        margin-top: 6px;
+    }
+
+    #nav {
+        display: block;
+    }
+    #nav > li {
+        display: block;
+    }
+
+    #nav > li:first-child {
+        display: inline-block;
+    }
+
+    #nav li a {
+        padding: 1px 24px;
+    }
+    
+    #nav .subnav {
+        position: initial;
+        background-color: #333;
+    }
+
+    #nav .subnav a {
+        color: #fff;
+        padding: 5px 41px;
+    }
+
+    #content .member-item {
+        width: 100%;
+    }
+
+    #content .member-img {
+        width: 60%;
+        height: 60%;
+    }
+
+    .places-list {
+        margin-top: 16px;
+    }
+
+    #header {
+        overflow: hidden;
+    }
+
+    #header .search-button {
+        display: none;
+    }
+
+
+    #header .mobile-menu-btn {
+        display: block;
+    }
+
+    .contact-form {
+        margin-top: 32px;
+    }
+
+    .map-section .text-content {
+        bottom: 13px;
+    }
+
+    .map-section .text-heading {
+        font-size: 18px;
+    }
+
+    .map-section .text-description {
+        font-size: 14px;
+        margin-top: 6px;
+    }
+}
+
+/* Tablet  */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+}
