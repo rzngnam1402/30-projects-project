@@ -70,13 +70,20 @@ function checkLengthError(input, min, max) {
 
 }
 
+function checkMatchingPasswordError(passwordInput, cfpasswordInput) {
+    if (passwordInput.value !== cfpasswordInput.value) {
+        showError(cfpasswordInput, `Password does not match !`);
+        return true;
+    }
+    return false;
+}
+
 form.addEventListener('submit', function (e) {
     e.preventDefault()
 
     let isEmptyError = checkEmptyInvalid([username, email, password, confirmPassword])
     let isEmailError = checkEmailError(email);
-    // let isUsernameLengthError = checkLengthError(username, 6, 30);
-    // let isPasswordLengthError = checkLengthError(password, 6, 30);
-
-
+    let isUsernameLengthError = checkLengthError(username, 6, 30);
+    let isPasswordLengthError = checkLengthError(password, 6, 30);
+    let isMatchPasswordError = checkMatchingPasswordError(password, confirmPassword);
 })
