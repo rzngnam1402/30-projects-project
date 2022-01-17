@@ -5,3 +5,12 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    font-family: "Poppins";
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)), url(cold.png) no-repeat center/cover;
+}
